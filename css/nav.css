@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --textcolor: #000;
+  --mainColor: #3366cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo img {
+  vertical-align: middle;
+  width: 45px;
+}
+
+.header .menu .head {
+  display: none;
+}
+
+.header .menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header .menu > ul > li {
+  display: flex;
+  align-items: center;
+}
+.header .menu > ul > li a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header .menu .dropdown {
+  position: relative;
+}
+.header .menu .dropdown section {
+  display: flex;
+  align-items: center;
+}
+.header .menu .dropdown section a {
+  padding: 10px 30px;
+  transition: 0.5 ease-in-out;
+}
+
+.header .menu .dropdown section:hover {
+  background: var(--mainColor);
+  color: white;
+}
+
+.splide__arrow--next,
+.splide__arrow--prev{
+  z-index: 60;
+}
+
+.header .menu .dropdown section a:hover .header .menu a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textcolor);
+  line-height: 1.5;
+  display: block;
+}
+.header .menu > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .menu > ul > li > a {
+  transition: 0.5s;
+  height: 100%;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header .menu > ul > li > a:hover {
+  background: var(--mainColor);
+  color: white;
+  text-decoration: underline;
+}
+
+.header .menu i {
+  font-size: 10px;
+  pointer-events: none;
+  user-select: none;
+  color: var(--textcolor);
+}
+
+.header .menu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 230px;
+  padding: 15px 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transform-origin: top;
+  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 5px;
+  background: #fff;
+}
+.header .menu .sub-menu li {
+  padding: 6px 24px;
+}
+
+.header .menu .sub-menu-right {
+  left: 100%;
+  top: 0;
+}
+
+.header .menu .sub-menu-left {
+  left: auto;
+  right: 100%;
+  top: 0;
+}
+
+.header .menu li:hover > .sub-menu {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .header .menu .sub-menu a {
+  padding: 6px 24px;
+} */
+
+.header .menu .sub-menu .dropdown > a {
+  padding-right: 34px;
+}
+
+.header .menu .sub-menu span {
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 100%));
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.5s ease;
+}
+
+.header .menu .sub-menu li:hover > a > span {
+  background-size: 100% 1px;
+}
+
+.header .menu .sub-menu i {
+  transform: rotate(-90deg);
+  right: 24px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-right > * {
+  margin-left: 25px;
+}
+
+.header-right .icon-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--textcolor);
+  font-size: 16px;
+}
+
+.header-right .open-menu-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    /* padding: 15px 30px 30px; */
+    overflow-y: auto;
+    z-index: 999;
+    transform: translateX(100%);
+    background-color: white;
+  }
+
+  .header .menu .dropdown section {
+  }
+
+  .header .menu .sub-menu {
+    background: #d5d5d5;
+    border-radius: 0;
+  }
+
+  .header .menu .sub-menu-left-mobile {
+    background: #f2f2f2;
+  }
+
+  .header .menu.open {
+    transform: none;
+  }
+
+  .header .menu .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .header .menu .close-menu-btn {
+    height: 35px;
+    min-width: 35px;
+    width: 35px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  .header .menu .close-menu-btn::before,
+  .header .menu .close-menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: var(--textcolor);
+  }
+
+  .header .menu .close-menu-btn::before {
+    transform: rotate(45deg);
+  }
+
+  .header .menu .close-menu-btn::after {
+    transform: rotate(-45deg);
+  }
+  .header .menu > ul {
+    flex-direction: column;
+  }
+
+  .header .menu > ul > li {
+    display: block;
+  }
+
+  .header .menu > ul > li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header .menu li {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+  }
+
+  .header .menu li:first-child {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.25);
+  }
+
+  .header .menu > ul > li > a {
+    padding: 12px 20px;
+  }
+
+  .header .menu .dropdown section a {
+    padding: 10px 20px;
+  }
+
+  .header .menu > ul > .dropdown > a {
+    padding-right: 34px;
+  }
+
+  .header .menu i {
+    height: 34px;
+    width: 34px;
+    border: 1px solid hsla(0, 0%, 100%, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    cursor: pointer;
+    top: 7px;
+  }
+
+  .header .menu .dropdown.active > i {
+    background-color: hsla(0, 0%, 100%, 0.25);
+    transform: rotate(180deg);
+  }
+
+  .header .menu .sub-menu {
+    position: static;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    padding: 0;
+    transition: none;
+    box-shadow: none;
+    width: 100%;
+    display: none;
+  }
+
+  .header .menu .dropdown.active > .sub-menu {
+    display: block;
+  }
+
+  .header .menu .sub-menu li:last-child {
+    border: none;
+  }
+
+  .header .menu .sub-menu a {
+    padding: 12px 0 12px 15px;
+  }
+
+  .header .menu .sub-menu .sub-menu a {
+    padding-left: 30px;
+  }
+
+  .header .menu .sub-menu .sub-menu .sub-menu a {
+    padding-left: 45px;
+  }
+
+  .header .menu .sub-menu span {
+    background-image: none;
+  }
+
+  .header .menu .sub-menu i {
+    transform: none;
+    right: 0;
+  }
+
+  .header-right .open-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 44px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header-right .open-menu-btn .line {
+    height: 2px;
+    width: 30px;
+    background-color: var(--textcolor);
+    position: absolute;
+  }
+
+  .header-right .open-menu-btn .line-1 {
+    transform: translateY(-8px);
+  }
+
+  .header-right .open-menu-btn .line-2 {
+    transform: translateY(8px);
+  }
+}
+
+@media (max-width: 600px) {
+  .header .menu {
+    width: 100%;
+  }
+}
+
+/*Hero*/
+.hero {
+  min-height: 100vh;
+  background-image: url(../img/hero-bg.jpg);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-out-right {
+  -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-13 7:46:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-out-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}

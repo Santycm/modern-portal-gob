@@ -1,0 +1,72 @@
+:root {
+  --navColor: #074984;
+  --gobColor: #3366cc;
+  --gris: #f2f2f2;
+  --grayColor: #575656;
+  --mainBlue: #3a5399;
+  --secondaryBlue: #00b6ed;
+  --thirdBlue: #3767af;
+  --blackTitle: #5a5a58;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-work-sans {
+  font-family: "Work Sans", sans-serif;
+}
+
+.bg-gradient-gray {
+  background: #828282;
+  background: repeating-linear-gradient(to top, #828282 0%, #ffffff 100%);
+}
+
+/*Estilos  para los iconos de interes */
+
+.customStroke {
+  stroke: #fff;
+  stroke-width: 2.4;
+  stroke-miterlimit: 10;
+  transition: 1s all;
+}
+
+a:hover figure svg.customStroke {
+  stroke: var(--mainBlue);
+}
+
+a:hover figure path.fillIcon {
+  stroke: white;
+}
+/*Estilos  para los iconos de interes */
+
+/*Estilos  para los eventos */
+
+.secCalendar figure {
+  background-color: var(--mainBlue);
+}
+
+.secCalendar :nth-child(2n) figure {
+  background-color: var(--thirdBlue);
+}
+
+.activeTab {
+  border-width: 2px;
+  border-bottom: 0px;
+  border-color: black;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+/*Estilos  para los eventos */
+
+/*Estilos navbar*/

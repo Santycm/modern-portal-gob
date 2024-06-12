@@ -67,6 +67,19 @@ a:hover figure path.fillIcon {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
+
+.pattern{
+  background: 
+      linear-gradient(135deg,#0000 20.5%,#628ad4 0 29.5%,#0000 0) 0 50px,
+      linear-gradient( 45deg,#0000 8%,#628ad4 0 17%, #0000 0 58%) 100px 0,
+      linear-gradient(135deg,#0000 8%,#628ad4 0 17%, #0000 0 58%,#628ad4 0 67%,#0000 0),        
+      linear-gradient( 45deg,#0000 8%,#628ad4 0 17%, #0000 0 58%,#628ad4 0 67%,#0000 0 83%,#628ad4 0 92%,#0000 0),
+      #3c63ad;
+      background-size: 200px 200px;
+}
+
+
+
 /*Estilos  para los eventos */
 
 /*Estilos navbar*/

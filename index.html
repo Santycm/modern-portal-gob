@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -30,38 +30,28 @@
     </section>
     <!-- sec gob  -->
     <!-- sec logos and input search -->
-    <section
-      class="lg:container mx-auto p-6 py-10 flex flex-wrap justify-center lg:justify-between items-center gap-y-6 xl:gap-6">
-      <article class="flex gap-6 flex-col lg:flex-row items-center justify-center lg:justify-start">
-        <section class="flex gap-3">
-          <a href="https://www.gov.co/" class="w-14">
-            <img src="./img/Escudo_de_Colombia.png" class="w-full h-full object-contain" alt="" />
-          </a>
-          <a href="./index.html" class="w-14">
-            <img src="../img/logoAlcaldia.png" class="w-full h-full object-contain" alt="" />
-          </a>
-        </section>
-        <h2 class="text-[14px] font-semibold text-center lg:text-start">
-          Alcaldía de municipio
-        </h2>
-      </article>
+    <div class="flex justify-center items-center md:px-none px-3">
+      <div class="grid md:flex justify-between py-7 items-center max-md:grid gap-8 max-md:py-2">
+        <!--Alcaldia de municipio -->
+        <div class="flex items-center gap-2 justify-center">
 
-      <section class="flex flex-col gap-3 w-full lg:w-1/4">
-        <a href="/_layouts/15/Authenticate.aspx"
-          class="headerWeb__aut text-[12px] text-center lg:text-end hover:underline text-primaryBlue">Administrar
-          Sitio</a>
-        <!-- section input  -->
-        <article class="relative h-auto w-full">
-          <input type="text" placeholder="Buscar....."
-            class="text-[12px] border-2 w-full rounded-md py-2 px-3 outline-none focus:shadow-md transition duration-300" />
-          <button
-            class="bg-gobColor hover:bg-mainColorHover transition duration-300 rounded-full text-white absolute right-2 top-[0.3rem] cursor-pointer p-1 w-7 h-7 flex justify-center items-center"
-            id="btnSearchTramite">
-            <i class="fas fa-search text-[12px]"></i>
+          <img class="h-14 md:h-28" src="img/Escudo_de_Colombia.png" alt="" />
+          <img class="h-14 md:h-28" src="img/logoAlcaldia.png" alt="">
+          <h2 class="text-secondTitle md:text-3xl leading-none text-wrap">
+            Alcadía de <b>MUNICIPIO</b>
+          </h2>
+        </div>
+        <!--Buscador -->
+        <div class="border-2 rounded-full items-center overflow-hidden border-mainColor grid grid-cols-4">
+          <input class="col-span-3 ml-5 mr-1 focus:outline-none text-[10px] bg-transparent w-[16rem]" type="text"
+            placeholder="BUSCAR" />
+          <button class="col-span-1 bg-mainColor p-4">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
           </button>
-        </article>
-        <!-- section input  -->
-      </section>
+        </div>
+      </div>
+    </div>
+
     </section>
     <!-- sec logos and input search -->
 
@@ -69,22 +59,29 @@
   <!-- header  -->
 
   <!-- nav  -->
-  <section class="header bg-navBg px-6 w-full border-b-2 border-blueLine sticky top-0 z-50">
+  <section class="header bg-transparent px-6 w-full  border-blueLine top-0 sticky z-[300] lg:mb-[2rem]">
     <nav class="menu lg:container mx-auto">
       <div class="head p-3 lg:px-0">
         <div class="logo">
-          <img src="./img/logoAlcaldia.png" alt="logo" />
+          <img src="img/logoAlcaldia.png" alt="logo" />
         </div>
         <button type="button" class="close-menu-btn"></button>
       </div>
-      <ul>
-        <li class=""><a href="#" class="">Inicio</a></li>
-        <li class="">
+      <ul class="grid gap-2" id="elementsNav">
+        <li class="home bg-homeNavBg">
+          <a href="">
+            <div class="h-10 w-10"><svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="fill-white">
+                <path
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+              </svg></div>
+          </a>
+        </li>
+        <li class="border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <a href="/Transparencia/Paginas/Transparencia-y-Acceso-a-la-Informacion-Publica.aspx">Transparencia
             y acceso <br />
             información pública</a>
         </li>
-        <li class="dropdown group">
+        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 ">Atención y
               Servicios <br />
@@ -140,7 +137,7 @@
                 de Niños</a></li>
           </ul>
         </li>
-        <li class="dropdown group">
+        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 ">Participa</a>
 
@@ -163,7 +160,7 @@
                 del Sitio Web</a></li>
           </ul>
         </li>
-        <li class="dropdown group">
+        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <section class="h-full lg:pr-4">
             <a href="#">Mi municipio</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -234,7 +231,7 @@
           </ul>
         </li>
 
-        <li class="dropdown group">
+        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <section class="h-full lg:pr-4">
             <a href="#">Nuestra alcaldía</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -297,7 +294,7 @@
           </ul>
         </li>
 
-        <li class="dropdown group">
+        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
           <section class="h-full lg:pr-4">
             <a href="#">Proyectos</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -316,7 +313,6 @@
 
       </ul>
     </nav>
-    <!-- nav button -->
     <section class="container py-2 lg:py-0">
       <div class="header-right">
         <button type="button" class="open-menu-btn">
@@ -326,8 +322,9 @@
         </button>
       </div>
     </section>
-    <!-- nav button -->
   </section>
+
+
   <!-- nav  -->
 
   <!-- main  -->
@@ -865,8 +862,9 @@
   </main>
 
   <!--Destacados-->
-  <section class="w-full bg-mainColor flex flex-col items-center justify-center">
-    <h2 class="uppercase  w-full text-center lg:py-[4rem] py-[2rem] text-white text-2xl font-bold ">DESTACADOS
+  <section class="w-full bg-mainColor flex flex-col items-center justify-center pattern">
+    <h2 class="uppercase  w-full text-center lg:py-[4rem] py-[2rem] text-white text-2xl  lg:text-4xl font-bold ">
+      DESTACADOS
     </h2>
     <div class="w-full pb-[4rem] overflow-hidden transition-all duration-500 ">
       <div class="flex lg:mx-36">
@@ -1058,26 +1056,64 @@
   </section>
   <!--Patrocinadores-->
 
-  <!-- sec banner final  -->
-  <section class="px-6 my-20">
-    <article class="lg:container mx-auto flex flex-col">
-      <div class="w-full h-12 bg-mainColor"></div>
-      <img
-        src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        class="w-full h-[20vh] lg:h-[40vh] object-cover translate-y-[-30px] px-3" alt="" />
-    </article>
-  </section>
-  <!-- sec banner final  -->
 
   <!-- footer  -->
   <footer class="flex flex-col">
+    <div class="flex items-center justify-center">
+      <h2 class="py-4 text-2xl lg:text-4xl text-mainColor font-extrabold">DATOS GENERALES</h2>
+    </div>
+
+    <article
+      class="lg:container mx-auto bg-mainColor gap-6 lg:gap-6 w-full lg:w-[90%] border-b-[4rem] border-mainColor">
+      <div class="py-[5rem]">
+        <ul class="grid lg:grid-cols-6 grid-cols-2">
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+          <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
+            <i class="fa-solid fa-map-location-dot text-[8rem] text-center"></i>
+            <h4 class="text-2xl text-center font-bold">Colombia</h4>
+            <p class="text-center">País</p>
+          </li>
+        </ul>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.17374802231!2d-75.58155192417638!3d6.240817926382051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429afa96f2347%3A0xdcc43fd6f4a16cf7!2s1cero1%20Software!5e0!3m2!1ses!2sco!4v1718227365248!5m2!1ses!2sco"
+        class="w-full h-[25rem]" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
     <!-- sec info  -->
     <section class="bg-mainColor px-6 flex flex-col gap-6">
+
       <!-- info alcaldia  -->
       <article
-        class="lg:container mx-auto bg-white border rounded-md transform translate-y-[-30px] lg:translate-y-[-2rem] px-10 py-10 lg:py-20 shadow-md grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 w-full lg:w-[90%]">
+        class="lg:container mx-auto bg-white border rounded-b-lg transform translate-y-[-30px] lg:translate-y-[-2rem] px-10 py-10 lg:py-20 shadow-md grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 w-full lg:w-[90%]">
+
         <!-- sec 1 información alcaldía -->
         <div class="col-span-1 lg:col-span-2 flex flex-col gap-4 order-2 lg:order-1">
+
           <!-- titulo  -->
           <h2 class="text-mainColor font-semibold text-lg">
             Alcadía Municipal de Jamundí, Valle del Cauca

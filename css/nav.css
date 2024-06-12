@@ -2,7 +2,8 @@
 
 :root {
   --textcolor: #000;
-  --mainColor: #3366cc;
+  --mainColor: #00b6ed;
+  --bgColor: #3c63ad;
 }
 
 * {
@@ -90,14 +91,13 @@
 .header .menu > ul > li > a:hover {
   background: var(--mainColor);
   color: white;
-  text-decoration: underline;
 }
 
 .header .menu i {
   font-size: 10px;
   pointer-events: none;
   user-select: none;
-  color: var(--textcolor);
+  color: white;
 }
 
 .header .menu .sub-menu {
@@ -107,7 +107,6 @@
   width: 230px;
   padding: 15px 0;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  z-index: 999;
   transform-origin: top;
   transform: scaleY(0);
   visibility: hidden;
@@ -131,6 +130,7 @@
 }
 
 .header .menu li:hover > .sub-menu {
+  color: black;
   opacity: 1;
   transform: none;
   visibility: visible;
@@ -198,8 +198,7 @@
     background-color: white;
   }
 
-  .header .menu .dropdown section {
-  }
+
 
   .header .menu .sub-menu {
     background: #d5d5d5;

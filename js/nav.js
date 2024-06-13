@@ -14,9 +14,9 @@ const bgNav = document.querySelector(".header");
 window.addEventListener("scroll", () => {
   const scroll = document.documentElement.scrollTop;
   if (window.innerWidth > 1200) {
-    if (scroll > 300) {
+    if (scroll > 200) {
       changeNavColors();
-    } else if (scroll < 300) {
+    } else if (scroll < 200) {
       resetNavColors();
     }
   } else if (window.innerWidth < 1200) {

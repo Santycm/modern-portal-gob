@@ -77,7 +77,7 @@ var splide = new Splide(".patrocinadores", {
       gap: ".5rem",
     },
     480: {
-      perPage: 2,
+      perPage: 1,
       gap: ".5rem",
     },
   },

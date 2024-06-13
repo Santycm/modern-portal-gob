@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
       menu.classList.remove(menuAnimations.show);
     }
     window.addEventListener("resize", () => {
-      if (window.innerWidth >= 1200) {
+      if (window.innerWidth > 1200) {
         if (menu.classList.contains(menuAnimations.hide)) {
           menu.classList.remove(menuAnimations.hide);
         }

@@ -61,7 +61,7 @@
 }
 
 .splide__arrow--next,
-.splide__arrow--prev{
+.splide__arrow--prev {
   z-index: 60;
 }
 
@@ -197,8 +197,6 @@
     transform: translateX(100%);
     background-color: white;
   }
-
-
 
   .header .menu .sub-menu {
     background: #d5d5d5;

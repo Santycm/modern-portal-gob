@@ -4,7 +4,9 @@ tailwind.config = {
     extend: {
       colors: {
         gobColor: "#3366cc",
+
         navBg: "#f2f2f2",
+
         homeNavBg: "#505152",
         mainColor: "#3c63ad",
         mainColorHover: "#074984",
@@ -17,6 +19,12 @@ tailwind.config = {
 
         firstTitle: "#3c63ad",
         secondTitle: "#5a5a58",
+
+        bgColor1: "#3c63ad",
+        bgColor2: "#f2f2f2", //BgNav
+        bgColor3: "#505152", //BgHomeNav
+
+        hoverColor1: "#00b6ed",
       },
     },
   },

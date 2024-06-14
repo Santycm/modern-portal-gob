@@ -20,13 +20,12 @@ var splide = new Splide(".destacados", {
   pagination: true,
   classes: {
     arrows: "splide__arrows ",
-    arrow: "border-2",
+    arrow: "border-2 ",
     prev: "splide__arrow--prev border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none bg-white [&>svg]:p-2 z-20",
 
     next: "splide__arrow--next border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none bg-white [&>svg]:p-2 z-20",
 
-    pagination:
-      "splide__pagination gap-1 lg:flex justify-center lg:translate-y-[3rem] hidden z-20",
+    pagination: "splide__pagination gap-1 lg:flex justify-center  hidden ",
     page: "splide__pagination__page border-2 border-solid bg-white w-4 h-4 shadow-md border-white",
   },
   autoplay: "play",
@@ -35,12 +34,12 @@ splide.mount();
 
 var splide = new Splide(".slider__services", {
   classes: {
-    arrows: "splide__arrows",
+    arrows: " ",
     arrow: "rounded-full",
     prev: "splide__arrow--prev absolute !left-5 top-1/2 transform -translate-y-1/2 scale-x-[1] min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center  shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] z-20",
     next: "splide__arrow--next absolute !right-5 top-1/2 transform -translate-y-1/2 min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] z-20",
-    pagination: "splide__pagination flex gap-1",
-    page: "splide__pagination__page border-2 border-solid !bg-transparent w-2 h-2 shadow-md",
+    pagination: "splide__pagination flex  gap-1",
+    page: "splide__pagination__page border-2 border-solid !bg-transparent w-2 h-2 shadow-md flex",
   },
   rewind: true,
   autoplay: "play",

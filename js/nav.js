@@ -7,9 +7,20 @@ const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu-btn");
 const closeMenuBtn = document.querySelector(".close-menu-btn");
 
-const nav = document.querySelectorAll("#elementsNav > li");
+const nav = document.querySelectorAll("#elementsNav > li ");
+const navDownIcon = document.querySelectorAll("#elementsNav > li > section > i");
+const homeNavBg = document.querySelector("#elementsNav > .home");
+const homeNavIcon = document.querySelector(
+  "#elementsNav > .home > a > div > svg"
+);
 const bgNav = document.querySelector(".header");
 
+//Vericar la posoción de scroll para aplicar estilos al Nav al momento de recargar la pagina
+if (document.documentElement.scrollTop > 200) {
+  changeNavColors();
+} else if (document.documentElement.scrollTop < 200) {
+  resetNavColors();
+}
 //Cambio de colores del nav al hacer scroll
 window.addEventListener("scroll", () => {
   const scroll = document.documentElement.scrollTop;
@@ -58,31 +69,41 @@ menu.querySelectorAll(".dropdown > i").forEach((arrow) => {
 });
 
 function changeNavColors() {
+  navDownIcon.forEach(function (icon) {
+    icon.classList.add("invert");
+  });
   nav.forEach(function (navElement) {
     if (navElement.classList.contains("home")) {
       return;
     } else {
       navElement.classList.add("bg-transparent");
       navElement.classList.add("text-black");
-      navElement.classList.remove("bg-mainColor");
+      navElement.classList.remove("bg-bgColor1");
       navElement.classList.remove("text-white");
     }
   });
   bgNav.classList.add("bg-[#f2f2f2]");
   bgNav.classList.remove("bg-transparent");
+  homeNavIcon.classList.add("fill-black");
+  homeNavBg.classList.add("bg-transparent");
 }
 
 function resetNavColors() {
+  navDownIcon.forEach(function (icon) {
+    icon.classList.remove("invert");
+  });
   nav.forEach(function (navElement) {
     if (navElement.classList.contains("home")) {
       return;
     } else {
       navElement.classList.remove("bg-transparent");
-      navElement.classList.add("bg-mainColor");
+      navElement.classList.add("bg-bgColor1");
       navElement.classList.remove("text-black");
       navElement.classList.add("text-white");
     }
   });
   bgNav.classList.remove("bg-[#f2f2f2]");
   bgNav.classList.add("bg-transparent");
+  homeNavIcon.classList.remove("fill-black");
+  homeNavBg.classList.remove("bg-transparent");
 }

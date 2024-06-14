@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PORTAL WEB</title>
-  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -37,7 +36,7 @@
         <div class="flex items-center gap-2 justify-center">
           <img class="h-14 md:h-28" src="img/Escudo_de_Colombia.png" alt="" />
           <img class="h-14 md:h-28" src="img/logoAlcaldia.png" alt="">
-          <h2 class="text-secondTitle md:text-3xl leading-none text-wrap">
+          <h2 class="text-secondColor md:text-3xl leading-none text-wrap">
             Alcadía de <b>MUNICIPIO</b>
           </h2>
         </div>
@@ -57,7 +56,7 @@
   <!-- header  -->
 
   <!-- nav  -->
-  <section class="header bg-transparent px-6 w-full top-0 sticky z-[300] lg:mb-[2rem]">
+  <section class="header bg-transparent  pt-4 w-full top-0 sticky z-[300] lg:mb-[2rem]">
     <nav class="menu lg:container mx-auto">
       <!--Logo and Close Mobile Menu-->
       <div class="head p-3 lg:px-0">
@@ -71,7 +70,7 @@
       <!--Nav elements-->
       <ul class="grid gap-2" id="elementsNav">
         <!--Home icon-->
-        <li class="home bg-homeNavBg">
+        <li class="home bg-fourthColor rounded-lg hover:bg-hoverColor2 transition-colors duration-300">
           <a href="">
             <div class="h-10 w-10">
               <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="fill-white">
@@ -83,15 +82,15 @@
         </li>
         <!--Home icon-->
 
-        <li class="border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="border-b-hoverColor2 border-b-4 rounded-lg bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <a href="/Transparencia/Paginas/Transparencia-y-Acceso-a-la-Informacion-Publica.aspx"
             class="text-wrap uppercase">Transparencia y acceso a la información pública</a>
         </li>
-        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 text-wrap uppercase">Atención y Servicios a la Ciudadanía</a>
             <i
-              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white "></i>
           </section>
 
           <ul class="sub-menu">
@@ -136,7 +135,7 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 uppercase">Participa</a>
 
@@ -159,7 +158,7 @@
                 del Sitio Web</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Mi municipio</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -229,7 +228,7 @@
                 de Eventos</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Nuestra alcaldía</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -291,7 +290,7 @@
                 Sostenible</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-ServiceHover border-b-4 bg-mainColor text-white">
+        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Proyectos</a>
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
@@ -325,7 +324,7 @@
   <!-- nav  -->
 
   <!-- main  -->
-  <main class="flex flex-col gap-12 mx-auto  xl:mx-36">
+  <main class="flex flex-col gap-12 mx-auto xl:mx-60">
     <!--Slider home-->
     <section>
       <article class="slider__container w-full h-[300px] lg:h-[450px] text-white">
@@ -333,6 +332,21 @@
           <section class="splide__track h-full">
             <!--Slider elements-->
             <ul class="splide__list">
+              <a href="#" class="splide__slide">
+                <img class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Imagen" />
+              </a>
+              <a href="#" class="splide__slide">
+                <img class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Imagen" />
+              </a>
+              <a href="#" class="splide__slide">
+                <img class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Imagen" />
+              </a>
               <a href="#" class="splide__slide">
                 <img class="w-full h-full object-cover"
                   src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -358,7 +372,7 @@
 
           <!--Slider controls-->
           <article
-            class="absolute bg-mainColor flex items-center justify-center px-6 lg:px-10 h-10 lg:h-12 rounded-t-lg">
+            class="absolute bg-black bg-opacity-50 flex items-center justify-center px-6 lg:px-10 h-[20%] w-full rounded-t-lg border-b-mainColor border-b-[1rem]">
             <button
               class="splide__toggle !bottom-auto text-white uppercase text-[12px] lg:text-[1rem] h-full items-center"
               type="button">
@@ -383,10 +397,10 @@
     <section class="flex flex-col gap-16 px-5 lg:px-40">
       <!-- Bienvenidos  -->
       <article class="flex flex-col gap-3 w-full items-center">
-        <h1 class="text-firstTitle  text-4xl  2xl:text-6xl font-bold">
+        <h1 class="text-mainColor  text-4xl  2xl:text-6xl font-bold">
           ¡Bienvenidos!
         </h1>
-        <h2 class="text-secondTitle text-[1.5rem] lg:text-lg xl:text-xl 2xl:text-2xl flex flex-col text-center">
+        <h2 class="text-secondColor text-[1.5rem] lg:text-lg xl:text-xl 2xl:text-2xl flex flex-col text-center">
           <span>ALCALDÍA</span><span class="lg:text-2xl xl:text-2xl 2xl:text-4xl font-extrabold">MUNICIPIO</span>
         </h2>
         <div class="flex flex-col gap-4 text-center items-center">
@@ -472,14 +486,14 @@
       <!-- Interes  -->
 
       <!-- servicio al ciudadano  -->
-      <article class="bg-mainServiceBg py-12 flex flex-col items-center gap-6 md:gap-12 md:py-20 w-full rounded-3xl">
+      <article class="bg-thirdColor py-12 flex flex-col items-center gap-6 md:gap-12 md:py-20 w-full rounded-3xl">
         <h2 class="text-white text-center text-2xl font-bold lg:text-4xl text-wrap">SERVICIO AL CIUDADANO</h2>
         <article class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4  p-2">
           <!-- item service  -->
           <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-ServiceHover border-transparent justify-center p-4">
+            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
             <figure
-              class="bg-ServiceBg w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
               <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
             </figure>
             <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
@@ -487,9 +501,9 @@
           <!-- item service  -->
           <!-- item service  -->
           <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-ServiceHover border-transparent justify-center p-4">
+            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
             <figure
-              class="bg-ServiceBg w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
               <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
             </figure>
             <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
@@ -497,9 +511,9 @@
           <!-- item service  -->
           <!-- item service  -->
           <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-ServiceHover border-transparent justify-center p-4">
+            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
             <figure
-              class="bg-ServiceBg w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
               <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
             </figure>
             <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
@@ -507,9 +521,9 @@
           <!-- item service  -->
           <!-- item service  -->
           <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-ServiceHover border-transparent justify-center p-4">
+            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
             <figure
-              class="bg-ServiceBg w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
               <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
             </figure>
             <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
@@ -530,7 +544,7 @@
       <!--news container-->
       <div class="lg:relative">
         <!--bg element-->
-        <div class="hidden lg:absolute lg:inset-0 lg:z-0 lg:block bg-ServiceHover w-[50%] h-96 rounded-xl"></div>
+        <div class="hidden lg:absolute lg:inset-0 lg:z-0 lg:block bg-hoverColor2 w-[50%] h-96 rounded-xl"></div>
         <!--bg element-->
 
         <!--news main container-->
@@ -540,7 +554,7 @@
             <!--item noticia-->
             <figure class="col-sṕan-1 lg:col-span-3 lg:grid lg:grid-cols-3 gap-16">
               <div class="lg:col-span-2">
-                <img class="w-full h-full object-cover border-b-ServiceHover border-b-8 lg:border-b-0 rounded-xl"
+                <img class="w-full h-full object-cover border-b-hoverColor2 border-b-8 lg:border-b-0 rounded-xl"
                   src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="">
               </div>
@@ -560,7 +574,7 @@
                   </p>
                 </div>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-mainColorHover">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -570,7 +584,7 @@
             <figure class="col-span-1">
               <img
                 src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="rounded-t-lg w-full object-cover border-b-ServiceHover border-b-8" alt="" />
+                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
               <figcaption class="flex flex-col gap-3 mt-2 p-3">
                 <p>20 Jul</p>
                 <h3 class="text-mainColor text-lg font-semibold text-justify">
@@ -587,7 +601,7 @@
                   essentially unchanged.
                 </p>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-mainColorHover">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -596,7 +610,7 @@
             <figure class="col-span-1">
               <img
                 src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="rounded-t-lg w-full object-cover border-b-ServiceHover border-b-8" alt="" />
+                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
               <figcaption class="flex flex-col gap-3 mt-2 p-3">
                 <p>20 Jul</p>
                 <h3 class="text-mainColor text-lg font-semibold text-justify">
@@ -613,7 +627,7 @@
                   essentially unchanged.
                 </p>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-mainColorHover">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -623,7 +637,7 @@
             <figure class="col-span-1">
               <img
                 src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="rounded-t-lg w-full object-cover border-b-ServiceHover border-b-8" alt="" />
+                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
               <figcaption class="flex flex-col gap-3 mt-2 p-3">
                 <p>20 Jul</p>
                 <h3 class="text-mainColor text-lg font-semibold text-justify">
@@ -640,7 +654,7 @@
                   essentially unchanged.
                 </p>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-mainColorHover">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -811,23 +825,23 @@
       DESTACADOS</h2>
 
     <!--destacados section-->
-    <div class="w-full overflow-hidden transition-all duration-500 ">
+    <div class="w-full overflow-hidden transition-all duration-500 lg:mb-[4rem] mb-[2rem]">
       <!--destacados container-->
       <div class="flex lg:mx-auto w-full px-3 xl:w-[1200px]">
         <!--splide destacados-->
-        <section class="splide destacados w-full grid items-center justify-start relative xl:px-[7rem]"
+        <section class="splide destacados w-full grid items-center justify-start relative"
           aria-labelledby="multiple-slides-heading">
           <!--Destacados carousel-->
-          <div class="splide__track relative z-0 col-span-3 mb-[7rem]">
+          <div class="splide__track relative z-0 col-span-3 ">
             <!--Destacados list-->
             <ul class="splide__list" id="slider__destacados ">
               <!--Destacados item-->
-              <div class="splide__slide py-4  lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
+              <div class="splide__slide lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
                 <section class="flex flex-col lg:col-span-1 text-white gap-4 py-4 items-center justify-start ">
                   <h3 class="font-semibold text-justify lg:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
                     ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing el.
                     Consequuntur, dicta!</h3>
-                  <p class="line-clamp-3 text-justify xl:line-clamp-5">Lorem ipsum dolor sit amet consectetur,
+                  <p class="line-clamp-3 text-justify xl:line-clamp-6">Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit.
                     Quia dolor a qui
                     aspernatur sapiente. Dolore unde cum quam quae amet earum, maxime vitae corporis
@@ -841,12 +855,12 @@
               </div>
               <!--Destacados item-->
               <!--Destacados item-->
-              <div class="splide__slide py-4  lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
+              <div class="splide__slide lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
                 <section class="flex flex-col lg:col-span-1 text-white gap-4 py-4 items-center justify-start ">
                   <h3 class="font-semibold text-justify lg:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
                     ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing el.
                     Consequuntur, dicta!</h3>
-                  <p class="line-clamp-3 text-justify xl:line-clamp-5">Lorem ipsum dolor sit amet consectetur,
+                  <p class="line-clamp-3 text-justify xl:line-clamp-6">Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit.
                     Quia dolor a qui
                     aspernatur sapiente. Dolore unde cum quam quae amet earum, maxime vitae corporis
@@ -867,8 +881,8 @@
           <!--splide controls-->
 
           <article
-            class="flex flex-col items-center justify-end lg:items-start lg:justify-end lg:h-[50%] xl:h-[60%] h-full gap-4 absolute w-full mx-auto xl:px-[7rem] py-[1.5rem] lg:py-0">
-            <section class="splide__arrows gap-2 flex"></section>
+            class="flex flex-col items-center justify-end lg:items-start lg:justify-end h-full gap-4 lg:absolute pt-[1rem] lg:pt-0  w-full mx-auto ">
+            <section class="splide__arrows gap-2 flex relative"></section>
             <ul class="splide__pagination relative !bottom-auto z-0"></ul>
           </article>
 

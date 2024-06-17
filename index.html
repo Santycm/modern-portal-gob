@@ -20,11 +20,12 @@
 
 <body class="w-full min-h-screen " id="container">
   <!-- header -->
-  <header class="flex flex-col  overflow-visible">
+  <header class="flex flex-col  overflow-visible" aria-label="menu principal y buscador">
     <!-- sec gob  -->
     <section class="bg-gobColor px-6 py-3">
-      <figure class="lg:container mx-auto flex items-center justify-center lg:justify-start">
-        <img src="./img/logoGov.svg" class="w-32 object-contain" alt="" />
+      <figure class="lg:container mx-auto flex items-center justify-center lg:justify-start"
+        aria-label="cabecera gov.co">
+        <img src="./img/logoGov.svg" class="w-32 object-contain" />
       </figure>
     </section>
     <!-- sec gob  -->
@@ -34,20 +35,21 @@
       <div class="grid md:flex justify-between py-7 items-center max-md:grid gap-8 max-md:py-2">
         <!--Alcaldia de municipio -->
         <div class="flex items-center gap-2 justify-center">
-          <img class="h-14 md:h-28" src="img/Escudo_de_Colombia.png" alt="" />
-          <img class="h-14 md:h-28" src="img/logoAlcaldia.png" alt="">
+          <img class="h-14 md:h-28" src="img/Escudo_de_Colombia.png" alt="escudo de colombia" />
+          <img class="h-14 md:h-28" src="img/logoAlcaldia.png" alt="escudo de alcaldía">
           <h2 class="text-secondColor md:text-3xl leading-none text-wrap">
             Alcadía de <b>MUNICIPIO</b>
           </h2>
         </div>
         <!--Search -->
-        <div class="border-2 rounded-full items-center overflow-hidden border-mainColor grid grid-cols-4">
+        <form class="border-2 rounded-full items-center overflow-hidden border-mainColor grid grid-cols-4">
           <input class="col-span-3 ml-5 mr-1 focus:outline-none text-sm bg-transparent lg:w-[16rem]" type="text"
-            placeholder="BUSCAR" />
-          <button class="col-span-1 bg-mainColor p-4" aria-label="boton buscar">
+            placeholder="BUSCAR" aria-label="escribir para buscar" name="search" />
+          <button class="col-span-1 bg-mainColor p-4 hover:bg-hoverColor1" aria-label="boton buscar" tabindex="1"
+            type="submit">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
           </button>
-        </div>
+        </form>
         <!--Search -->
       </div>
     </div>
@@ -61,9 +63,9 @@
       <!--Logo and Close Mobile Menu-->
       <div class="head p-3 lg:px-0">
         <div class="logo">
-          <img src="img/logoAlcaldia.png" alt="logo" />
+          <img src="img/logoAlcaldia.png" alt="logo alcaldia" />
         </div>
-        <button type="button" class="close-menu-btn"></button>
+        <button type="button" class="close-menu-btn" aria-label="cerrar menu"></button>
       </div>
       <!--Logo and Close Mobile Menu-->
 
@@ -71,7 +73,7 @@
       <ul class="grid gap-2" id="elementsNav">
         <!--Home icon-->
         <li class="home bg-fourthColor rounded-lg hover:bg-hoverColor2 transition-colors duration-300">
-          <a href="">
+          <a href="" aria-label="boton menu principal">
             <div class="h-10 w-10">
               <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="fill-white">
                 <path
@@ -94,7 +96,7 @@
             <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu">
+          <ul class="sub-menu list-submenu">
             <li><a accesskey="q" href="/Ciudadanos/Paginas/PQRD.aspx">Peticiones, Quejas, Reclamos y Denuncias</a> </li>
 
             <li><a href="/Ciudadanos/Paginas/Estado-Tramite.aspx">Estado Tramite</a></li>
@@ -103,12 +105,13 @@
 
             <li><a href="/Ciudadanos/Paginas/Pagos-en-Linea.aspx">Pagos en Línea</a> </li>
 
-            <li><a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicio de Atención en Línea</a>
+            <li>
+              <a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicio de Atención en Línea</a>
             </li>
 
             <li class="dropdown">
               <a href="#"><span>Trabaja con nosotros</span></a>
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down invert"></i>
 
               <ul class="sub-menu sub-menu-right sub-menu-left-mobile">
                 <li><a href="/Ciudadanos/Paginas/Ofertas-Laborales.aspx">Agencia de Gestión y Colocación de Empleo</a>
@@ -144,7 +147,7 @@
             <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu">
+          <ul class="sub-menu list-submenu">
             <li><a href="/Conectividad/Paginas/Participacion-en-Linea.aspx">Participación
                 en Línea</a></li>
             <li><a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicios
@@ -166,7 +169,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu">
+          <ul class="sub-menu list-submenu">
             <li><a href="/MiMunicipio/Paginas/Presentacion.aspx">Presentación</a>
             </li>
 
@@ -237,7 +240,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu">
+          <ul class="sub-menu list-submenu">
             <li><a href="/NuestraAlcaldia/Paginas/Mision-y-Vision.aspx">Misión
                 Visión</a></li>
             <li><a href="/NuestraAlcaldia/Paginas/Objetivos-y-Funciones.aspx">Objetivos
@@ -300,7 +303,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu">
+          <ul class="sub-menu list-submenu">
             <li>
               <a href="/Proyectos/Paginas/Proyectos-Vigentes.aspx">Proyectos Vigentes</a>
             </li>

@@ -5,4 +5,4 @@ package.json
 postcss.config.json
 tailwind.config.json
 tailwind.css
-,gitignore
+.gitignore

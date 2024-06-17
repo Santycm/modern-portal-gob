@@ -80,6 +80,7 @@ function changeNavColors() {
       navElement.classList.add("text-black");
       navElement.classList.remove("bg-bgColor1");
       navElement.classList.remove("text-white");
+      navElement.classList.remove("rounded-lg");
     }
   });
   bgNav.classList.add("bg-[#f2f2f2]");
@@ -100,6 +101,7 @@ function resetNavColors() {
       navElement.classList.add("bg-bgColor1");
       navElement.classList.remove("text-black");
       navElement.classList.add("text-white");
+      navElement.classList.add("rounded-lg");
     }
   });
   bgNav.classList.remove("bg-[#f2f2f2]");

@@ -266,7 +266,6 @@
   .header .menu i {
     height: 34px;
     width: 34px;
-    border: 1px solid hsla(0, 0%, 100%, 0.25);
     display: inline-flex;
     align-items: center;
     justify-content: center;

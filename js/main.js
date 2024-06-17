@@ -109,8 +109,13 @@ tabs.addEventListener("click", (e) => {
     let tabLater = document.querySelector(".activeTab");
 
     tabLater.classList.remove("activeTab");
+    tabLater.classList.remove("bg-mainColor");
+    tabLater.classList.add("text-black");
 
     tabSelected2.classList.add("activeTab");
+    tabSelected2.classList.remove("text-black");
+    tabSelected2.classList.add("text-white");
+    tabSelected2.classList.add("bg-mainColor");
 
     let itemsRedes = [...document.querySelectorAll(".itemRed")];
 

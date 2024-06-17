@@ -44,7 +44,7 @@
         <div class="border-2 rounded-full items-center overflow-hidden border-mainColor grid grid-cols-4">
           <input class="col-span-3 ml-5 mr-1 focus:outline-none text-sm bg-transparent lg:w-[16rem]" type="text"
             placeholder="BUSCAR" />
-          <button class="col-span-1 bg-mainColor p-4">
+          <button class="col-span-1 bg-mainColor p-4" aria-label="boton buscar">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
           </button>
         </div>
@@ -56,7 +56,7 @@
   <!-- header  -->
 
   <!-- nav  -->
-  <section class="header bg-transparent  pt-4 w-full top-0 sticky z-[300] lg:mb-[2rem]">
+  <section class="header bg-transparent pt-2 w-full top-0 sticky z-[300] lg:mb-[2rem]">
     <nav class="menu lg:container mx-auto">
       <!--Logo and Close Mobile Menu-->
       <div class="head p-3 lg:px-0">
@@ -82,15 +82,16 @@
         </li>
         <!--Home icon-->
 
-        <li class="border-b-hoverColor2 border-b-4 rounded-lg bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="border-b-hoverColor2 border-b-4 rounded-lg bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <a href="/Transparencia/Paginas/Transparencia-y-Acceso-a-la-Informacion-Publica.aspx"
             class="text-wrap uppercase">Transparencia y acceso a la información pública</a>
         </li>
-        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 text-wrap uppercase">Atención y Servicios a la Ciudadanía</a>
-            <i
-              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white "></i>
+            <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
           <ul class="sub-menu">
@@ -135,12 +136,12 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class=" h-full lg:pr-4 ">
             <a href="#" class="transition-all duration-300 uppercase">Participa</a>
 
-            <i
-              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+            <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
           <ul class="sub-menu">
@@ -158,10 +159,11 @@
                 del Sitio Web</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Mi municipio</a>
-            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
           <ul class="sub-menu">
@@ -228,10 +230,11 @@
                 de Eventos</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Nuestra alcaldía</a>
-            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
           <ul class="sub-menu">
@@ -290,10 +293,11 @@
                 Sostenible</a></li>
           </ul>
         </li>
-        <li class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+        <li
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
           <section class="h-full lg:pr-4">
             <a href="#" class="uppercase">Proyectos</a>
-            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
           <ul class="sub-menu">
@@ -324,7 +328,7 @@
   <!-- nav  -->
 
   <!-- main  -->
-  <main class="flex flex-col gap-12 mx-auto xl:mx-60">
+  <main class="flex flex-col gap-12 mx-auto lg:px-20">
     <!--Slider home-->
     <section>
       <article class="slider__container w-full h-[300px] lg:h-[450px] text-white">
@@ -394,7 +398,7 @@
     <!--Slider home-->
 
     <!-- main content -->
-    <section class="flex flex-col gap-16 px-5 lg:px-40">
+    <section class="flex flex-col gap-16 md:px-12">
       <!-- Bienvenidos  -->
       <article class="flex flex-col gap-3 w-full items-center">
         <h1 class="text-mainColor  text-4xl  2xl:text-6xl font-bold">
@@ -412,127 +416,224 @@
       <!-- Bienvenidos  -->
 
       <!-- Interes  -->
-      <article class="flex flex-col gap-6">
+      <article class="flex flex-col gap-6 px-1">
         <h2 class="text-mainColor mb-4 text-2xl font-bold lg:text-3xl text-center">ENLACES DE INTERÉS</h2>
-        <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-2">
+        <ul class="w-full grid grid-cols-2 sm:grid-cols-3 gap-2 lg:gap-2">
           <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
-          <!-- item interes  -->
-          <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.7rem] lg:text-[1rem] break-words">RETOS DE PARTICIPACIÓN</h3>
+              </div>
+            </a>
+          </li>
+
           <!-- item interes  -->
           <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.6rem] lg:text-[1rem] break-words">CONTRATACIONES</h3>
+              </div>
+            </a>
+          </li>
           <!-- item interes  -->
           <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.7rem] lg:text-[1rem] break-words">CALENDARIO</h3>
+              </div>
+            </a>
+          </li>
           <!-- item interes  -->
           <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.7rem] lg:text-[1rem] break-words">PETICIONES Y QUEJAS</h3>
+              </div>
+            </a>
+          </li>
           <!-- item interes  -->
           <!-- item interes  -->
-          <a href="#"
-            class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
-            <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
-              <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
-            </div>
-            <div class="col-span-2 p-2 w-full">
-              <h3 class="font-semibold text-[0.5rem] lg:text-[1rem]">RENDICIÓN DE CUENTAS</h3>
-            </div>
-          </a>
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.7rem] lg:text-[1rem] break-words">TRÁMITES Y SERVICIOS</h3>
+              </div>
+            </a>
+          </li>
           <!-- item interes  -->
-        </div>
+          <!-- item interes  -->
+          <li>
+            <a href="#"
+              class="grid grid-cols-3 border-2 border-mainColor rounded-lg items-center justify-start hover:bg-mainColor hover:text-white transition-colors">
+              <div class="h-full col-span-1 overflow-hidden flex items-center justify-center bg-mainColor p-4">
+                <i class="fa-regular fa-hand text-white lg:text-6xl text-2xl"></i>
+              </div>
+              <div class="col-span-2 p-2 w-full">
+                <h3 class="font-semibold text-[0.7rem] lg:text-[1rem] break-words">RENDICIÓN DE CUENTAS</h3>
+              </div>
+            </a>
+          </li>
+          <!-- item interes  -->
+        </ul>
       </article>
       <!-- Interes  -->
 
       <!-- servicio al ciudadano  -->
-      <article class="bg-thirdColor py-12 flex flex-col items-center gap-6 md:gap-12 md:py-20 w-full rounded-3xl">
-        <h2 class="text-white text-center text-2xl font-bold lg:text-4xl text-wrap">SERVICIO AL CIUDADANO</h2>
-        <article class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4  p-2">
+      <article class="bg-thirdColor py-12 flex flex-col items-center gap-6 md:gap-12 md:py-20 w-full sm:rounded-3xl">
+        <h2 class="text-white text-center text-xl font-bold lg:text-4xl text-wrap">SERVICIO AL CIUDADANO</h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-4  p-2">
           <!-- item service  -->
-          <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
-            <figure
-              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
-              <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
-            </figure>
-            <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
-          </a>
-          <!-- item service  -->
-          <!-- item service  -->
-          <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
-            <figure
-              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
-              <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
-            </figure>
-            <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
-          </a>
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">PQRSD</h3>
+            </a>
+          </li>
+
           <!-- item service  -->
           <!-- item service  -->
-          <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
-            <figure
-              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
-              <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
-            </figure>
-            <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
-          </a>
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
+            </a>
+          </li>
+
           <!-- item service  -->
           <!-- item service  -->
-          <a href="#"
-            class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
-            <figure
-              class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
-              <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
-            </figure>
-            <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESTADÍSTICAS DEL SITIO</h3>
-          </a>
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">GALERÍA DE IMÁGENES</h3>
+            </a>
+          </li>
+
           <!-- item service  -->
-        </article>
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">TRÁMITES Y SERVICIOS</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">NUESTROS PLANES</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">ESPACIOS DESCENTRALIZADOS
+              </h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">PDM 2020-2023 PLAN DE DESARROLLO</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">PBOT ORDENAMIENTO TERRITORIAL</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">PAGA AQUÍ IMPUESTO PREDIAL</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+          <!-- item service  -->
+          <li class="w-full h-full">
+            <a href="#"
+              class="flex flex-col gap-4 items-center rounded-xl border-4 hover:border-hoverColor2 border-transparent justify-center p-4">
+              <figure
+                class="bg-mainColor w-20 h-20 lg:w-36 lg:h-36 rounded-full flex justify-center items-center shadow-lg transition-all duration-500 hover:translate-y-[-10px] cursor-pointer col-span-1 p-4">
+                <img src="./img/servicioIcon1.svg" class="lg:w-24 w-16" alt="" />
+              </figure>
+              <h3 class="lg:text-xl font-semibold text-white text-center text-sm">INDUSTRIA Y COMERCIO</h3>
+            </a>
+          </li>
+          <!-- item service  -->
+
+        </ul>
       </article>
       <!-- servicio al ciudadano  -->
-
     </section>
     <!-- main content -->
 
@@ -542,30 +643,30 @@
         NOTICIAS
       </h2>
       <!--news container-->
-      <div class="lg:relative">
+      <div class="sm:relative">
         <!--bg element-->
-        <div class="hidden lg:absolute lg:inset-0 lg:z-0 lg:block bg-hoverColor2 w-[50%] h-96 rounded-xl"></div>
+        <div class="hidden sm:absolute sm:inset-0 sm:z-0 sm:block bg-hoverColor2 w-[50%] h-96 rounded-xl"></div>
         <!--bg element-->
 
         <!--news main container-->
-        <div class="relative z-10 lg:mt-6 lg:ml-6">
+        <div class="relative z-10 sm:mt-6 sm:ml-6">
           <!--news list-->
-          <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 gap-2">
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-6 gap-2">
             <!--item noticia-->
-            <figure class="col-sṕan-1 lg:col-span-3 lg:grid lg:grid-cols-3 gap-16">
-              <div class="lg:col-span-2">
-                <img class="w-full h-full object-cover border-b-hoverColor2 border-b-8 lg:border-b-0 rounded-xl"
+            <figure class="col-sṕan-1 sm:col-span-3 sm:grid sm:grid-cols-3 gap-4">
+              <div class="sm:col-span-2">
+                <img class="w-full h-full object-cover border-b-hoverColor2 border-b-8 sm:border-b-0 rounded-xl"
                   src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="">
               </div>
-              <figcaption class="lg:col-span1 my-4 lg:my-8 flex flex-col justify-between p-3">
-                <div class="grid lg:gap-8 gap-3 mb-3">
-                  <p>20 Jul</p>
+              <figcaption class="sm:col-span1 my-4 sm:my-8 flex flex-col justify-between p-3">
+                <div class="grid sm:gap-8 gap-3 mb-3">
+                  <p>Mayo 30, 2024</p>
                   <h3 class="text-mainColor text-lg font-semibold text-justify">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </h3>
-                  <p class="overflow-hidden line-clamp-3 lg:line-clamp-6 text-[1rem] text-justify">
+                  <p class="overflow-hidden line-clamp-3 sm:line-clamp-6 text-[1rem] text-justify">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quibusdam obcaecati ut enim
                     iusto ad? Tempore necessitatibus labore quos ea, ratione tenetur! Enim optio consequuntur culpa
                     laudantium quod repellendus voluptatibus sit mollitia fuga. Rerum vitae voluptates recusandae
@@ -574,7 +675,60 @@
                   </p>
                 </div>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 sm:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
+                  más
+                </a>
+              </figcaption>
+            </figure>
+            <!--item noticia-->
+            <!--item noticia-->
+            <figure class="col-span-1">
+              <img
+                src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
+              <figcaption class="flex flex-col gap-3 mt-2 p-3">
+                <p>Mayo 30, 2024</p>
+                <h3 class="text-mainColor text-lg font-semibold text-justify">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </h3>
+                <p class="overflow-hidden line-clamp-3 text-[14px] text-justify">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a
+                  type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining
+                  essentially unchanged.
+                </p>
+                <a href="#"
+                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 sm:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
+                  más
+                </a>
+              </figcaption>
+            </figure>
+            <!--item noticia-->
+            <figure class="col-span-1">
+              <img
+                src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
+              <figcaption class="flex flex-col gap-3 mt-2 p-3">
+                <p>Mayo 30, 2024</p>
+                <h3 class="text-mainColor text-lg font-semibold text-justify">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </h3>
+                <p class="overflow-hidden line-clamp-3 text-[14px] text-justify">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a
+                  type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining
+                  essentially unchanged.
+                </p>
+                <a href="#"
+                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 sm:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -601,60 +755,7 @@
                   essentially unchanged.
                 </p>
                 <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
-                  más
-                </a>
-              </figcaption>
-            </figure>
-            <!--item noticia-->
-            <figure class="col-span-1">
-              <img
-                src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
-              <figcaption class="flex flex-col gap-3 mt-2 p-3">
-                <p>20 Jul</p>
-                <h3 class="text-mainColor text-lg font-semibold text-justify">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </h3>
-                <p class="overflow-hidden line-clamp-3 text-[14px] text-justify">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book. It has survived not only five centuries,
-                  but also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
-                <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
-                  más
-                </a>
-              </figcaption>
-            </figure>
-            <!--item noticia-->
-            <!--item noticia-->
-            <figure class="col-span-1">
-              <img
-                src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="rounded-t-lg w-full object-cover border-b-hoverColor2 border-b-8" alt="" />
-              <figcaption class="flex flex-col gap-3 mt-2 p-3">
-                <p>20 Jul</p>
-                <h3 class="text-mainColor text-lg font-semibold text-justify">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </h3>
-                <p class="overflow-hidden line-clamp-3 text-[14px] text-justify">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book. It has survived not only five centuries,
-                  but also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
-                <a href="#"
-                  class="text-[1rem] text-center bg-mainColor text-white border-2 px-6 py-4 lg:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
+                  class="text-[1rem] text-center bg-mainColor text-white px-6 py-4 sm:w-[50%] rounded-lg font-semibold hover:bg-hoverColor3">Ver
                   más
                 </a>
               </figcaption>
@@ -680,39 +781,40 @@
     <!-- sec noticias  -->
 
     <!--Redes sociales-->
-    <section class="flex justify-center flex-col px-2">
+    <section class="flex justify-center flex-col ">
       <h2 class="text-mainColor text-center text-2xl font-bold lg:text-3xl mb-12">
         NUESTRAS REDES
       </h2>
       <!--Redes desktop container-->
-      <section class="hidden lg:grid lg:container mx-auto lg:grid-cols-3 items-start gap-12">
+      <section class="hidden sm:grid mx-auto sm:grid-cols-3 items-start gap-12">
         <!--youtube-->
         <div class="col-span-2 h-full">
           <!--youtube icon-->
           <div class="flex flex-col mb-4">
-            <div class="flex flex-row items-baseline border-b-2 border-black">
-              <a href=""><i
-                  class="fa-brands fa-youtube text-[2.5rem] p-2 border-2 border-black rounded-t-xl ml-14 border-b-0"></i></a>
+            <div class="flex flex-row items-baseline border-b-2 border-b-mainColor pl-12">
+              <a href="#" aria-current="page"
+                class="inline-block p-4 rounded-t-lg text-white hover:bg-hoverColor1 hover:text-white bg-mainColor">
+                <i class="fa-brands fa-youtube text-[2rem]"></i></a>
             </div>
           </div>
           <!--youtube icon-->
           <!--youtube container-->
           <div>
-            <iframe class="w-[100%] h-[360px]"
-              src="https://www.youtube.com/embed/1IkY0_qONRk?si=HqdPzRPcSG94_SEP&amp;controls=0"
+            <iframe class="w-full" height="300" src="https://www.youtube.com/embed/dzjnKl4l2Ys?si=cODiiZXOo8vhsxJn"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <div class="p-3">
-              <h3 class="text-mainColor text font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</h3>
-              <p class="text-black">639 suscriptores</p>
-              <p class="text-black text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam
-                libero facere
-                ratione, saepe atque! Id quam nisi, odit laudantium ipsum reprehenderit, at maiores corporis consectetur
-                tempora
-                maxime ipsa animi?</p>
+              <h3 class="text-mainColor text font-bold text-xl">Realizar una PQRDS en Autenticación Digital con CC |
+                GOV.CO/Territorial</h3>
+              <p class="text-black font-semibold">4850 visualizaciones 22 sept 2022 Tutoriales 2022 | GOV.CO/Territoria
+              </p>
+              <p class="text-black text-sm">Bienvenido a GOV.CO/Territorial, en este tutorial aprenderás como realizar
+                una solicitud de PQRDS en Autenticación Digital con CC en la sede electrónica de tu entidad.
+                <br>Creamos cultura digital, disfruta de las mejoras implementadas para perfeccionar nuestro servicio.
+                <br>#Colombia
+              </p>
             </div>
           </div>
           <!--youtube container-->
@@ -722,14 +824,16 @@
         <!--facebook and x container-->
         <section class="w-full lg:col-span-1 lg:block">
           <!--facebook and x icons-->
-          <ul class="contenedorTabs flex flex-wrap border-b-2 border-b-black" id="tabs">
-            <li class="">
-              <a href="" aria-current="page" data-target="facebook" class="tabRedes inline-block activeTab p-2 ml-14 ">
-                <i class="fa-brands fa-facebook text-[2.5rem]"></i></a>
+          <ul class="contenedorTabs flex flex-wrap border-b-2 border-b-mainColor pl-12" id="tabs">
+            <li class="me-2">
+              <a href="#" aria-current="page" data-target="facebook"
+                class="tabRedes inline-block p-4 rounded-t-lg text-white hover:bg-hoverColor1 hover:text-white activeTab bg-mainColor">
+                <i class="fa-brands fa-facebook text-[2rem]"></i></a>
             </li>
-            <li class="">
-              <a href="" data-target="twitter" class="tabRedes inline-block p-2">
-                <i class="fa-brands fa-x-twitter text-[2.5rem]"></i></a>
+            <li class="me-2">
+              <a href="#" data-target="twitter"
+                class="tabRedes inline-block p-4 rounded-t-lg hover:text-white text-black hover:bg-hoverColor1">
+                <i class="fa-brands fa-x-twitter text-[2rem]"></i></a>
             </li>
           </ul>
           <!--facebook and x icons-->
@@ -747,10 +851,11 @@
             <!--facebook-->
             <!--x-->
             <section class="itemRed hidden" data-select="twitter">
-              <div align="center"><a class="twitter-timeline" data-height="500" data-width="600" data-dnt="true"
-                  href="https://twitter.com/AlcaldiadeMed?ref_src=twsrc%5Etfw">Tweets by AlcaldiadeMed</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a
+                    href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a
+                  href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a>
+              </blockquote>
               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </section>
             <!--x-->
@@ -762,48 +867,83 @@
       <!--Redes desktop-->
 
       <!--Redes mobile-->
-      <section class="lg:hidden">
-        <!--youtube icon-->
-        <a href="" class="flex items-center justify-start">
-          <i class="fa-brands fa-youtube text-[2.5rem] p-2"></i>
-          <p class="text-black">YouTube</p>
-        </a>
-        <!--youtube icon-->
-        <!--youtube content-->
-        <iframe class="w-[100%] h-full"
-          src="https://www.youtube.com/embed/1IkY0_qONRk?si=HqdPzRPcSG94_SEP&amp;controls=0"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        <!--youtube content-->
-        <!--facebook icon-->
-        <a href="" class="flex items-center justify-start">
-          <i class="fa-brands fa-facebook text-[2.5rem] p-2"></i>
-          <p class="text-black">Facebook</p>
-        </a>
-        <!--facebook icon-->
-        <!--facebook content-->
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FFordIndia%2Fposts%2F4221333164585267&amp;show_text=true&amp;width=auto"
-          class="rounded-xl" width="500" height="460" style="border:none;overflow:hidden;width:100%;" scrolling="no"
-          frameborder="0" allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        <!--facebook content-->
-        <!--x icon-->
-        <a href="" class="flex items-center justify-start">
-          <i class="fa-brands fa-x text-[2.5rem] p-2"></i>
-          <p class="text-black">X</p>
-        </a>
-        <!--x icon-->
-        <!--x content-->
-        <div align="center"><a class="twitter-timeline" data-height="500" data-width="600" data-dnt="true"
-            href="https://twitter.com/AlcaldiadeMed?ref_src=twsrc%5Etfw">Tweets by AlcaldiadeMed</a>
+      <section class="md:hidden">
+        <!--youtube-->
+        <div>
+          <!--youtube icon-->
+          <div class="flex flex-col mb-4">
+            <div class="flex flex-row items-baseline border-b-2 border-b-mainColor">
+              <a href="#" aria-current="page"
+                class="inline-block p-4 rounded-t-lg text-white hover:bg-hoverColor1 hover:text-white bg-mainColor">
+                <i class="fa-brands fa-youtube text-[2rem]"></i></a>
+            </div>
+          </div>
+          <!--youtube icon-->
+          <!--youtube content-->
+          <div>
+            <iframe class="w-full" height="300" src="https://www.youtube.com/embed/dzjnKl4l2Ys?si=cODiiZXOo8vhsxJn"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="p-3">
+              <h3 class="text-mainColor text font-bold text-xl">Realizar una PQRDS en Autenticación Digital con CC |
+                GOV.CO/Territorial</h3>
+              <p class="text-black font-semibold">4850 visualizaciones 22 sept 2022 Tutoriales 2022 | GOV.CO/Territoria
+              </p>
+              <p class="text-black text-sm">Bienvenido a GOV.CO/Territorial, en este tutorial aprenderás como realizar
+                una solicitud de PQRDS en Autenticación Digital con CC en la sede electrónica de tu entidad.
+                <br>Creamos cultura digital, disfruta de las mejoras implementadas para perfeccionar nuestro servicio.
+                <br>#Colombia
+              </p>
+            </div>
+          </div>
+          <!--youtube content-->
+        </div>
+        <!--youtube-->
+
+        <!--facebook-->
+        <div>
+          <!--facebook icon-->
+          <div class="flex flex-col mb-4">
+            <div class="flex flex-row items-baseline border-b-2 border-b-mainColor">
+              <a href="#" aria-current="page"
+                class="inline-block p-4 rounded-t-lg text-white hover:bg-hoverColor1 hover:text-white bg-mainColor">
+                <i class="fa-brands fa-facebook text-[2rem]"></i></a>
+            </div>
+          </div>
+          <!--facebook icon-->
+          <!--facebook content-->
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FFordIndia%2Fposts%2F4221333164585267&amp;show_text=true&amp;width=auto"
+            class="rounded-xl" width="500" height="500" style="border:none;overflow:hidden;width:100%;" scrolling="no"
+            frameborder="0" allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+          <!--facebook content-->
+        </div>
+        <!--facebook-->
+        <!--x-->
+        <div>
+          <!--x icon-->
+          <div class="flex flex-col mb-4">
+            <div class="flex flex-row items-baseline border-b-2 border-b-mainColor">
+              <a href="#" aria-current="page"
+                class="inline-block p-4 rounded-t-lg text-white hover:bg-hoverColor1 hover:text-white bg-mainColor">
+                <i class="fa-brands fa-x-twitter text-[2rem]"></i></a>
+            </div>
+          </div>
+          <!--x icon-->
+          <!--x content-->
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a
+                href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a
+              href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a>
+          </blockquote>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <!--x content-->
         </div>
-        <!--x content-->
         </div>
+        <!--x-->
       </section>
       <!--Redes mobile-->
     </section>
@@ -811,8 +951,8 @@
 
     <!--Encuesta-->
     <section class="flex justify-center items-center mb-12">
-      <a href="">
-        <img src="img/encuesta.png" class="w-full h-full object-cover overflow-hidden rounded-xl" alt="">
+      <a href="" aria-label="ancuesta de satisfaccion">
+        <img src="img/encuesta.png" class="w-full h-full object-cover overflow-hidden sm:rounded-xl" alt="">
       </a>
     </section>
     <!--Encuesta-->
@@ -825,9 +965,9 @@
       DESTACADOS</h2>
 
     <!--destacados section-->
-    <div class="w-full overflow-hidden transition-all duration-500 lg:mb-[4rem] mb-[2rem]">
+    <div class="w-full overflow-hidden transition-all duration-500 sm:mb-[4rem] mb-[2rem]">
       <!--destacados container-->
-      <div class="flex lg:mx-auto w-full px-3 xl:w-[1200px]">
+      <div class="flex sm:mx-auto w-full px-3 xl:w-[1200px]">
         <!--splide destacados-->
         <section class="splide destacados w-full grid items-center justify-start relative"
           aria-labelledby="multiple-slides-heading">
@@ -836,9 +976,9 @@
             <!--Destacados list-->
             <ul class="splide__list" id="slider__destacados ">
               <!--Destacados item-->
-              <div class="splide__slide lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
-                <section class="flex flex-col lg:col-span-1 text-white gap-4 py-4 items-center justify-start ">
-                  <h3 class="font-semibold text-justify lg:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
+              <div class="splide__slide sm:grid sm:grid-cols-3 gap-6 sm:px-0 px-3">
+                <section class="flex flex-col sm:col-span-1 text-white gap-4 py-4 items-center justify-start ">
+                  <h3 class="font-semibold text-justify sm:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
                     ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing el.
                     Consequuntur, dicta!</h3>
                   <p class="line-clamp-3 text-justify xl:line-clamp-6">Lorem ipsum dolor sit amet consectetur,
@@ -849,15 +989,15 @@
                     nulla consequuntur dignissimos eum iusto excepturi praesentium id, autem
                     voluptatum facere totam delectus culpa. Error, quibusdam ullam?</p>
                 </section>
-                <section class="lg:col-span-2">
+                <section class="sm:col-span-2">
                   <img src="img/img_encuesta.jpg" class="w-full object-cover rounded-xl" alt="">
                 </section>
               </div>
               <!--Destacados item-->
               <!--Destacados item-->
-              <div class="splide__slide lg:grid lg:grid-cols-3 gap-6 lg:px-0 px-3">
-                <section class="flex flex-col lg:col-span-1 text-white gap-4 py-4 items-center justify-start ">
-                  <h3 class="font-semibold text-justify lg:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
+              <div class="splide__slide sm:grid sm:grid-cols-3 gap-6 sm:px-0 px-3">
+                <section class="flex flex-col sm:col-span-1 text-white gap-4 py-4 items-center justify-start ">
+                  <h3 class="font-semibold text-justify sm:text-lg 2xl:text-2xl line-clamp-3 xl:line-clamp-4">Lorem
                     ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing el.
                     Consequuntur, dicta!</h3>
                   <p class="line-clamp-3 text-justify xl:line-clamp-6">Lorem ipsum dolor sit amet consectetur,
@@ -868,7 +1008,7 @@
                     nulla consequuntur dignissimos eum iusto excepturi praesentium id, autem
                     voluptatum facere totam delectus culpa. Error, quibusdam ullam?</p>
                 </section>
-                <section class="lg:col-span-2">
+                <section class="sm:col-span-2">
                   <img src="img/img_encuesta.jpg" class="w-full object-cover rounded-xl" alt="">
                 </section>
               </div>
@@ -881,7 +1021,7 @@
           <!--splide controls-->
 
           <article
-            class="flex flex-col items-center justify-end lg:items-start lg:justify-end h-full gap-4 lg:absolute pt-[1rem] lg:pt-0  w-full mx-auto ">
+            class="flex flex-col items-center justify-end sm:items-start sm:justify-end h-full gap-4 sm:absolute pt-[1rem] sm:pt-0  w-full mx-auto ">
             <section class="splide__arrows gap-2 flex relative"></section>
             <ul class="splide__pagination relative !bottom-auto z-0"></ul>
           </article>
@@ -1039,11 +1179,12 @@
       <h2 class="py-4 text-2xl lg:text-4xl text-mainColor font-extrabold">DATOS GENERALES</h2>
     </div>
 
-    <section class="px-6 flex flex-col gap-6">
-      <article class="lg:container mx-auto bg-mainColor gap-6 lg:gap-6 w-full border-b-[4rem] border-mainColor">
+    <!---Datos generales-->
+    <section class="sm:px-6 flex flex-col gap-6">
+      <article class="sm:container mx-auto bg-mainColor gap-6 w-full border-b-[4rem] border-mainColor">
         <div class="py-[5rem]">
           <!-- general data list-->
-          <ul class="grid lg:grid-cols-6 grid-cols-2">
+          <ul class="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3">
             <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
               <h4 class="text-2xl text-center font-bold">Colombia</h4>
@@ -1051,28 +1192,28 @@
             </li>
             <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
-              <h4 class="text-2xl text-center font-bold">Colombia</h4>
-              <p class="text-center">País</p>
+              <h4 class="text-2xl text-center font-bold">Huila</h4>
+              <p class="text-center">Departamento</p>
             </li>
             <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
-              <h4 class="text-2xl text-center font-bold">Colombia</h4>
-              <p class="text-center">País</p>
+              <h4 class="text-2xl text-center font-bold">299.44km <sup>2</sup></h4>
+              <p class="text-center">Área territorio</p>
             </li>
             <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
-              <h4 class="text-2xl text-center font-bold">Colombia</h4>
-              <p class="text-center">País</p>
+              <h4 class="text-2xl text-center font-bold">20°C</h4>
+              <p class="text-center">Temperatura promedio</p>
             </li>
             <li class="text-white grid items-center justify-center lg:border-r-2 gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
-              <h4 class="text-2xl text-center font-bold">Colombia</h4>
-              <p class="text-center">País</p>
+              <h4 class="text-2xl text-center font-bold">1565msnm</h4>
+              <p class="text-center">Altitud</p>
             </li>
             <li class="text-white grid items-center justify-center gap-2 p-4">
               <i class="fa-solid fa-map-location-dot lg:text-[8rem] text-[4rem] text-center"></i>
-              <h4 class="text-2xl text-center font-bold">Colombia</h4>
-              <p class="text-center">País</p>
+              <h4 class="text-2xl text-center font-bold">40.456</h4>
+              <p class="text-center">Población Hab (2015)</p>
             </li>
           </ul>
           <!-- general data list-->
@@ -1085,13 +1226,14 @@
         <!-- google map-->
       </article>
     </section>
+    <!---Datos generales-->
 
     <!-- sec info  -->
-    <section class="bg-mainColor px-6 flex flex-col gap-6">
+    <section class="bg-mainColor sm:px-6 flex flex-col gap-6">
 
       <!-- info alcaldia  -->
       <article
-        class="lg:container mx-auto bg-white rounded-b-lg transform translate-y-[-30px] lg:translate-y-[-2rem] px-10 py-10 lg:py-20 shadow-md grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 w-full lg:w-[100%]">
+        class="lg:container mx-auto bg-white sm:rounded-b-lg transform translate-y-[-30px] lg:translate-y-[-2rem] px-10 py-10 lg:py-20 shadow-md grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 w-full lg:w-[100%]">
 
         <!-- sec 1 información alcaldía -->
         <div class="col-span-1 lg:col-span-2 flex flex-col gap-4 order-2 lg:order-1">

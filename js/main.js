@@ -2,8 +2,8 @@ var splide = new Splide(".slider__home", {
   classes: {
     arrows: "splide__arrows",
     arrow: "rounded-full",
-    prev: "splide__arrow--prev absolute !left-5 top-1/3 transform-translate-y-1/2 scale-x-[1] min-w-[2.2rem] h-[2.2rem]  flex items-center justify-center fill-black bg-white bg-opacity-50  shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] lg:[&>svg]:w-[3rem] lg:min-w-[4rem] lg:h-[4rem] ",
-    next: "splide__arrow--next absolute !right-5 top-1/3 transform-translate-y-1/2 scale-x-[1] min-w-[2.2rem] h-[2.2rem]  flex items-center justify-center fill-black bg-white bg-opacity-50  shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] lg:[&>svg]:w-[3rem] lg:min-w-[4rem] lg:h-[4rem]",
+    prev: "splide__arrow--prev absolute !left-5 top-1/3 transform-translate-y-1/2 scale-x-[1] min-w-[2.2rem] h-[2.2rem]  flex items-center justify-center fill-black bg-white bg-opacity-50 hover:bg-opacity-80 shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] lg:[&>svg]:w-[3rem] lg:min-w-[4rem] lg:h-[4rem] ",
+    next: "splide__arrow--next absolute !right-5 top-1/3 transform-translate-y-1/2 scale-x-[1] min-w-[2.2rem] h-[2.2rem]  flex items-center justify-center fill-black bg-white bg-opacity-50 hover:bg-opacity-80 shadow-sm focus:!outline-none [&>svg]:w-[1.3rem] lg:[&>svg]:w-[3rem] lg:min-w-[4rem] lg:h-[4rem]",
     pagination: "splide__pagination  focus:!outline-none",
     page: "splide__pagination__page border-2 border-solid  w-3 h-3  lg:w-4 lg:h-4 shadow-md focus:!outline-none",
   },
@@ -21,12 +21,12 @@ var splide = new Splide(".destacados", {
   classes: {
     arrows: "splide__arrows ",
     arrow: "border-2 ",
-    prev: "splide__arrow--prev border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none bg-white [&>svg]:p-2 z-20",
+    prev: "splide__arrow--prev border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none hover:bg-white [&>svg]:p-2 [&>svg]:fill-white hover:[&>svg]:fill-black transition-colors z-20",
 
-    next: "splide__arrow--next border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none bg-white [&>svg]:p-2 z-20",
+    next: "splide__arrow--next border-white border-2 rounded-xl flex items-center justify-center focus:!outline-none hover:bg-white [&>svg]:p-2 [&>svg]:fill-white hover:[&>svg]:fill-black transition-colors z-20",
 
-    pagination: "splide__pagination gap-1 lg:flex justify-center  hidden ",
-    page: "splide__pagination__page border-2 border-solid bg-white w-4 h-4 shadow-md border-white",
+    pagination: "splide__pagination gap-1 lg:flex justify-center hidden",
+    page: "splide__pagination__page border-2 border-solid  w-4 h-4  border-white",
   },
   autoplay: "play",
 });
@@ -128,4 +128,40 @@ tabs.addEventListener("click", (e) => {
     }
   }
 });
-// Funcionalidad navbarSticky
+
+//button up
+
+const btnUp = document.getElementById("btnUp");
+
+btnUp.addEventListener("mouseover", () => {
+  btnUp.lastChild.textContent = "Volver arriba";
+});
+
+btnUp.addEventListener("mouseout", () => {
+  btnUp.lastChild.textContent = "";
+});
+
+window.addEventListener("scroll", () => {
+  btnUpVisible();
+});
+
+function btnUpVisible() {
+  if (document.documentElement.scrollTop > 0) {
+    btnUp.classList.remove("hidden");
+    btnUp.classList.add("flex");
+  } else {
+    btnUp.classList.add("hidden");
+    btnUp.classList.remove("flex");
+  }
+}
+
+//Comprobar la posicion de lapagina para mostrar o no el boton al ser recargada
+btnUpVisible();
+
+btnUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+  btnUp.lastChild.textContent = "";
+});

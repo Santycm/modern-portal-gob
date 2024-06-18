@@ -17,46 +17,6 @@ const homeNavIcon = document.querySelector(
 );
 const bgNav = document.querySelector(".header");
 
-let activeSubmenu = null;
-const submenus = document.querySelectorAll(".dropdown");
-
-function toggleSubmenu(submenuElement) {
-  if (activeSubmenu) {
-    activeSubmenu
-      .querySelector(".list-submenu")
-      .classList.remove("visible-submenu");
-    submenuElement.querySelector(".list-submenu").classList.add("sub-menu");
-  }
-  activeSubmenu = submenuElement;
-  submenuElement.querySelector(".list-submenu").classList.remove("sub-menu");
-  submenuElement
-    .querySelector(".list-submenu")
-    .classList.add("visible-submenu");
-}
-
-submenus.forEach((submenu) => {
-  submenu.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      if (submenu === activeSubmenu) {
-        activeSubmenu.querySelector(".list-submenu").classList.remove("visible-submenu");
-        activeSubmenu.querySelector(".list-submenu").classList.add("sub-menu");
-        activeSubmenu = null;
-      } else {
-        toggleSubmenu(submenu);
-      }
-    }else if(event.key === "Enter"){
-      if(submenu == activeSubmenu){
-        activeSubmenu
-          .querySelector(".list-submenu")
-          .classList.remove("visible-submenu");
-        console.log("se oculto");
-        activeSubmenu.querySelector(".list-submenu").classList.add("sub-menu");
-        console.log("se oculto 2");
-        activeSubmenu = null;
-      }
-    }
-  });
-});
 
 //Vericar la posoción de scroll para aplicar estilos al Nav al momento de recargar la pagina
 if (document.documentElement.scrollTop > 200) {

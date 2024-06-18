@@ -18,20 +18,20 @@
   <!-- splide  -->
 </head>
 
-<body class="w-full min-h-screen " id="container">
+<body class="w-full min-h-screen " id="container" aria-label="pagina principal">
   <!-- header -->
-  <header class="flex flex-col  overflow-visible" aria-label="menu principal y buscador">
+  <header class="flex flex-col  overflow-visible">
     <!-- sec gob  -->
     <section class="bg-gobColor px-6 py-3">
       <figure class="lg:container mx-auto flex items-center justify-center lg:justify-start"
         aria-label="cabecera gov.co">
-        <img src="./img/logoGov.svg" class="w-32 object-contain" />
+        <img src="./img/logoGov.svg" class="w-32 object-contain" alt="logo gov.co" />
       </figure>
     </section>
     <!-- sec gob  -->
 
     <!-- sec logos and input search -->
-    <div class="flex justify-center items-center md:px-none px-3">
+    <div class="flex justify-center items-center md:px-none px-3" aria-label="escudos alcaldia y buscador">
       <div class="grid md:flex justify-between py-7 items-center max-md:grid gap-8 max-md:py-2">
         <!--Alcaldia de municipio -->
         <div class="flex items-center gap-2 justify-center">
@@ -59,7 +59,7 @@
 
   <!-- nav  -->
   <section class="header bg-transparent pt-2 w-full top-0 sticky z-[300] lg:mb-[2rem]">
-    <nav class="menu lg:container mx-auto">
+    <nav class="menu lg:container mx-auto" role="navigation">
       <!--Logo and Close Mobile Menu-->
       <div class="head p-3 lg:px-0">
         <div class="logo">
@@ -89,17 +89,18 @@
           <a href="/Transparencia/Paginas/Transparencia-y-Acceso-a-la-Informacion-Publica.aspx"
             class="text-wrap uppercase">Transparencia y acceso a la información pública</a>
         </li>
+
         <li
-          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300">
+          class="dropdown group border-b-hoverColor2 rounded-lg border-b-4 bg-mainColor text-white  hover:bg-hoverColor2 transition-colors duration-300" tabindex="0" accesskey="a">
           <section class=" h-full lg:pr-4 ">
-            <a href="#" class="transition-all duration-300 text-wrap uppercase">Atención y Servicios a la Ciudadanía</a>
+            <a href="#" role="button" class="transition-all duration-300 text-wrap uppercase">Atención y Servicios a la Ciudadanía</a>
             <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu list-submenu">
-            <li><a accesskey="q" href="/Ciudadanos/Paginas/PQRD.aspx">Peticiones, Quejas, Reclamos y Denuncias</a> </li>
+          <ul class="sub-menu">
+            <li><a accesskey="q" href="/Ciudadanos/Paginas/PQRD.aspx">Peticiones, Quejas, Reclamos y Denuncias</a></li>
 
-            <li><a href="/Ciudadanos/Paginas/Estado-Tramite.aspx">Estado Tramite</a></li>
+            <li><a href="/Ciudadanos/Paginas/Estado-Tramite.aspx" >Estado Tramite</a></li>
 
             <li><a href="/Ciudadanos/Paginas/Tramites-y-Servicios.aspx">Trámites y Servicios</a> </li>
 
@@ -147,7 +148,7 @@
             <i class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu list-submenu">
+          <ul class="sub-menu">
             <li><a href="/Conectividad/Paginas/Participacion-en-Linea.aspx">Participación
                 en Línea</a></li>
             <li><a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicios
@@ -169,7 +170,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu list-submenu">
+          <ul class="sub-menu">
             <li><a href="/MiMunicipio/Paginas/Presentacion.aspx">Presentación</a>
             </li>
 
@@ -240,7 +241,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu list-submenu">
+          <ul class="sub-menu">
             <li><a href="/NuestraAlcaldia/Paginas/Mision-y-Vision.aspx">Misión
                 Visión</a></li>
             <li><a href="/NuestraAlcaldia/Paginas/Objetivos-y-Funciones.aspx">Objetivos
@@ -303,7 +304,7 @@
             <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i>
           </section>
 
-          <ul class="sub-menu list-submenu">
+          <ul class="sub-menu">
             <li>
               <a href="/Proyectos/Paginas/Proyectos-Vigentes.aspx">Proyectos Vigentes</a>
             </li>

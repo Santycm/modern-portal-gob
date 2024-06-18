@@ -76,7 +76,7 @@ var splide = new Splide(".patrocinadores", {
       gap: ".5rem",
     },
     480: {
-      perPage: 1,
+      perPage: 3,
       gap: ".5rem",
     },
   },
@@ -89,8 +89,8 @@ var splide = new Splide(".patrocinadores", {
   classes: {
     arrows: "splide__arrows",
     arrow: "rounded-full",
-    prev: "splide__arrow--prev absolute !left-[-3rem] scale-x-[1] top-[0.5rem] lg:top-[2rem] min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center focus:!outline-none [&>svg]:w-[1rem] z-20",
-    next: "splide__arrow--next absolute !right-[-3rem] top-[0.5rem] lg:top-[2rem] min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center focus:!outline-none [&>svg]:w-[1rem] z-20",
+    prev: "splide__arrow--prev absolute !left-[-3rem] scale-x-[1] top-[0.5rem]  min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center focus:!outline-none [&>svg]:w-[1rem] z-20",
+    next: "splide__arrow--next absolute !right-[-3rem] top-[0.5rem]  min-w-[2.2rem] h-[2.2rem] border-0 flex items-center justify-center focus:!outline-none [&>svg]:w-[1rem] z-20",
   },
 });
 splide.mount();
@@ -149,9 +149,11 @@ function btnUpVisible() {
   if (document.documentElement.scrollTop > 0) {
     btnUp.classList.remove("hidden");
     btnUp.classList.add("flex");
+    btnUp.classList.add("gap-1");
   } else {
     btnUp.classList.add("hidden");
     btnUp.classList.remove("flex");
+    btnUp.classList.remove("gap-1");
   }
 }
 

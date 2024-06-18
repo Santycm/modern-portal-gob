@@ -1,8 +1,0 @@
-node_modules
-fonts.txt
-package-lock.json
-package.json
-postcss.config.js
-tailwind.config.js
-tailwind.css
-.gitignore

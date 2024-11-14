@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTAL WEB</title>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawesome -->
+
+    <!-- tailwind  -->
+    <script src="./js/tailwind.js"></script>
+    <script src="./js/tailwindConfig.js"></script>
+    <!-- tailwind  -->
+
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+
+  <body>
+    <section id="main-app" class="relative">
+      <section class="hidden w-full" id="menu-left">
+        <header class="flex flex-col lg:h-max lg:bg-white">
+          <section class="bg-gobColor py-[8px] w-full">
+            <a
+              href="https://www.gov.co/"
+              class="flex items-center justify-center lg:justify-start"
+              aria-label="cabecera gov.co"
+            >
+              <img
+                src="/SiteAssets/VillaLeyvaTw/assets/img/logoGov.svg"
+                class="w-32 object-contain"
+                alt="logo gov.co"
+              />
+            </a>
+          </section>
+        </header>
+        <nav
+          class="mt-[30px] pl-[15px] w-[62vw] h-[80vh] overflow-y-scroll overflow-x-hidden border-r-[1px] text-white border-white"
+        id="nav-mobile">
+          
+        </nav>
+      </section>
+      <section id="app">
+        <!-- HEADER -->
+        <header
+          class="flex flex-col sticky top-0 z-[300] lg:relative bg-gris lg:h-max lg:bg-white"
+        >
+          <section class="bg-gobColor py-[8px]">
+            <a
+              href="https://www.gov.co/"
+              class="lg:container px-[86px] mx-auto flex items-center justify-center lg:justify-start"
+              aria-label="cabecera gov.co"
+            >
+              <img
+                src="/SiteAssets/VillaLeyvaTw/assets/img/logoGov.svg"
+                class="w-32 object-contain"
+                alt="logo gov.co"
+              />
+            </a>
+          </section>
+          <section class="bg-[#123376]">
+            <section
+              class="container mx-auto p-[20px] flex justify-between flex-wrap w-full"
+            >
+              <nav>
+                <ul class="flex justify-center items-center lg:justify-start">
+                  <li class="mx-[10px]">
+                    <a href="#" class="text-white flex items-center gap-2"
+                      ><i class="fa-regular fa-building text-[25px]"></i>
+                      <p class="leading-none">Nuestra Alcaldía</p></a
+                    >
+                  </li>
+                  <li class="mx-[10px]">
+                    <a href="#" class="text-white flex items-center gap-2"
+                      ><i class="fa-solid fa-book-open text-[25px]"></i>
+                      <p class="leading-none">Directorio</p>
+                    </a>
+                  </li>
+                  <li class="mx-[10px]">
+                    <a href="#" class="text-white flex items-center gap-2"
+                      ><i class="fa-solid fa-circle-info text-[25px]"></i>
+                      <p class="leading-none">Infórmate</p></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </section>
+        </header>
+        <!-- HEADER -->
+
+        <main
+          class="container mx-auto flex flex-col justify-start items-start px-[15px] bg-white h-[100vh]"
+          id="principal-app"
+        >
+          <section class="w-full py-[10px] flex justify-between items-center">
+            <section class="w-full flex gap-3">
+              <img
+                src="SiteAssets/VillaLeyvaTw/assets/img/Escudo_de_Colombia v2.svg"
+                alt="escudo colombia"
+                class="h-[60px]"
+              />
+              <img
+                src="SiteAssets/VillaLeyvaTw/assets/img/AlcaldiaVillaDeLeyvaV2.png"
+                alt="logo alcaldia"
+                class="h-[60px]"
+              />
+            </section>
+            <h2 class="font-bold text-[20px]">INTRANET</h2>
+          </section>
+          <section class="w-full flex ">
+            <ul
+              class="text-white bg-[#123376] sm:w-1/2 lg:w-1/4 p-[20px] rounded-xl sm:flex flex-col gap-3 hidden"
+              id="sidebar-options"
+            >
+              <a
+                href=""
+                class="border-b-[1px] border-white py-2 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-book"></i>
+                <p>Capacitate</p>
+              </a>
+              <li class="flex flex-col gap-2 ">
+                <section
+                class="border-b-[1px] dropdown cursor-pointer border-white py-2 flex items-center justify-between gap-2 "
+                >
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-building"></i>
+                  <p>Inducción a la Alcaldía</p>
+                </div>
+                  
+                  <i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <ul class="pl-4 dropdown-menu hidden">
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-sitemap"></i>
+                    <p>Estructura organizacional</p>
+                  </a>
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-gavel"></i>
+                    <p>Codigo de integridad</p>
+                  </a>
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <p>Seguridad y salud en el trabajo</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="flex flex-col gap-2 ">
+                <section
+                  class="border-b-[1px] dropdown cursor-pointer border-white py-2 flex items-center justify-between gap-2 "
+                >
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-certificate"></i>
+                  <p>Certificados</p>
+                </div>
+                 
+                  <i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <ul class="pl-4 dropdown-menu hidden">
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <p>Recibo de Nómina</p>
+                  </a>
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-id-card"></i>
+                    <p>Certificados Funcionarios Planta</p>
+                  </a>
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-file-contract"></i>
+                    <p>Certificados contratistas</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="flex flex-col gap-2 ">
+                <section
+                  class="border-b-[1px] dropdown cursor-pointer border-white py-2 flex items-center justify-between gap-2 "
+                >
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-concierge-bell"></i>
+                  <p>Solicitud de servicios</p>
+                </div>
+                 
+                  <i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <ul class="pl-4 dropdown-menu hidden">
+                  <a
+                    href=""
+                    class="border-b-[1px] border-white py-2 flex items-center gap-2"
+                  >
+                    <i class="fa-solid fa-file-signature"></i>
+                    <p>Solicitud de permisos</p>
+                  </a>
+                 
+                </ul>
+              </li>
+              <a
+                href=""
+                class="border-b-[1px] border-white py-2 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-birthday-cake"></i>
+                <p>Cumpleaños del mes</p>
+              </a>
+              <a
+                href=""
+                class="border-b-[1px] border-white py-2 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-file-alt"></i>
+                <p>Cero Papel</p>
+              </a>
+              <a
+                href=""
+                class="border-b-[1px] border-white py-2 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-tasks"></i>
+                <p>MIPG</p>
+              </a>
+            </ul>
+            <article class="p-[20px]">
+              <h2 class="text-[20px] font-bold">
+                Bienvenido a la Intranet de la Alcaldía de Villa de Leyva
+              </h2>
+              <p class="text-[16px]">
+                En esta sección podrás encontrar información de interés para los
+                funcionarios de la Alcaldía de Villa de Leyva.
+              </p>
+              <p class="text-[16px]">
+                Aquí podrás acceder a diversos recursos y herramientas que te ayudarán en tu día a día laboral. A continuación, te presentamos algunas de las secciones más importantes:
+              </p>
+              <ul class="list-disc pl-5 text-[16px]">
+                <li>
+                  <strong>Noticias y Actualizaciones:</strong> Mantente informado sobre las últimas noticias y eventos de la Alcaldía.
+                </li>
+                <li>
+                  <strong>Documentos y Formularios:</strong> Accede a una variedad de documentos y formularios necesarios para tus tareas diarias.
+                </li>
+                <li>
+                  <strong>Recursos Humanos:</strong> Información sobre beneficios, políticas y procedimientos de recursos humanos.
+                </li>
+                <li>
+                  <strong>Capacitación y Desarrollo:</strong> Oportunidades de capacitación y desarrollo profesional para mejorar tus habilidades.
+                </li>
+                <li>
+                  <strong>Soporte Técnico:</strong> Obtén ayuda y soporte técnico para resolver cualquier problema relacionado con la tecnología.
+                </li>
+                <li>
+                  <strong>Directorio de Funcionarios:</strong> Encuentra información de contacto de otros funcionarios de la Alcaldía.
+                </li>
+              </ul>
+              <p class="text-[16px]">
+                Además, te invitamos a participar en nuestras encuestas y foros de discusión para compartir tus opiniones y sugerencias. Tu participación es fundamental para mejorar nuestros servicios y procesos.
+              </p>
+              <p class="text-[16px]">
+                Si tienes alguna pregunta o necesitas asistencia, no dudes en contactar al equipo de soporte a través de la sección de Soporte Técnico.
+              </p>
+              <p class="text-[16px]">
+                ¡Gracias por ser parte de la Alcaldía de Villa de Leyva y por tu dedicación y esfuerzo en servir a nuestra comunidad!
+              </p>
+            </article>
+          </section>
+          <button
+            class="bg-[#123376] fixed left-0 top-1/2 p-3 rounded-r-xl sm:hidden"
+            id="menu-btn"
+          >
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+        </main>
+
+        <nav
+          id="nav-bottom"
+          class="bg-[#123376] fixed bottom-0 px-3 py-2 lg:rounded-r-lg w-full sm:w-max"
+        >
+          <ul class="flex justify-center lg:justify-start">
+            <li class="mx-[10px]">
+              <a
+                href="#"
+                class="text-white flex items-center justify-center flex-col"
+                ><i class="fa-solid fa-house text-[25px]"></i>
+                <p class="text-[14px]">Inicio</p>
+              </a>
+            </li>
+            <li class="mx-[10px]">
+              <a
+                href="#"
+                class="text-white flex items-center justify-center flex-col"
+                ><i class="fa-solid fa-laptop text-[25px]"></i>
+                <p class="text-[14px]">Ayuda TIC</p>
+              </a>
+            </li>
+            <li class="mx-[10px]">
+              <a
+                href="#"
+                class="text-white flex items-center justify-center flex-col"
+                ><i class="fa-solid fa-book text-[25px]"></i>
+                <p class="text-[14px]">Manual de Marca</p>
+              </a>
+            </li>
+            <li class="mx-[10px]">
+              <a
+                href="#"
+                class="text-white flex items-center justify-center flex-col text-center"
+                ><i class="fa-solid fa-right-to-bracket text-[25px]"></i>
+                <p class="text-[14px]">Cerrar Sesión</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+
+    <script type="module" src="js/navbar.js"></script>
+  </body>
+</html>
